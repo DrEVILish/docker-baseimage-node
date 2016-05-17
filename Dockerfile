@@ -1,11 +1,11 @@
 FROM linuxserver/baseimage
 
-MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
+MAINTAINER DrEVILish
 
 ENV BASE_APTLIST="build-essential git-core libssl-dev nodejs"
 
 # install packages
-RUN curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
 apt-get install $BASE_APTLIST -qy && \
 npm install -g npm@latest && \
 
